@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        //编译JS之后需要遵循的标准：es3,es5,es2015(es6)
+        "noImplicitAny": true,
+        // false：无法根据变量的使用判断类型时，将用any类型代替; true：强类型检查，无法推断类型时，提示错误。
+        "module": "commonjs",
+        // 定义遵循的JavaScript模块规范。commonjs、AMD和es2015
+        "removeComments": true,
+        // 编译生成的JavaScript文件是否移除注释
+        "sourceMap": true,
+        // 编译时是否生成对应的source map文件
+        "outDir": "js"
+        //编辑js的输出目录
+    },
+    "include": [
+        //需要包含编译的目录
+        "ts"
+    ],
+    "exclude": [
+        //需要剔除编译的目录
+        "js"
+    ]
+}
